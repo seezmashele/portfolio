@@ -29,7 +29,7 @@ code {
 }
 
 .main_shadow {
-  box-shadow: 0 24px 60px -18px rgb(0 0 0 / 0.25);
+  box-shadow: 0 20px 64px -20px rgb(0 0 0 / 0.2);
 }
 
 @tailwind base;
@@ -52,7 +52,11 @@ code {
 
 @layer components {
   :root {
-    @apply bg-yellow-50;
+    @apply bg-neutral-50;
+  }
+
+  body {
+    @apply px-4;
   }
 
   .page_width_wide {
