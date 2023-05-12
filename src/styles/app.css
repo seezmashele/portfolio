@@ -29,7 +29,7 @@ code {
 }
 
 .main_shadow {
-  box-shadow: 0 20px 64px -20px rgb(0 0 0 / 0.2);
+  box-shadow: 0 20px 64px -20px rgb(0 0 0 / 0.15);
 }
 
 @tailwind base;
@@ -52,7 +52,7 @@ code {
 
 @layer components {
   :root {
-    @apply bg-neutral-50;
+    @apply bg-stone-50;
   }
 
   body {
