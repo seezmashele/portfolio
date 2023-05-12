@@ -52,7 +52,7 @@ code {
 
 @layer components {
   :root {
-    @apply bg-stone-50;
+    @apply bg-yellow-50;
   }
 
   body {
