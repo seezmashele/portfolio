@@ -61,17 +61,17 @@ export default function Home() {
 
       {/* ====================================================================== */}
 
-      <SectionTitle title="Honorable mentions" />
+      {/* <SectionTitle title="Honorable mentions" /> */}
       {/* <p className=" w-full max-w-2xl flex-grow leading-relaxed">
         The less obvious tools and tech I've used to create awesome projects.
       </p> */}
 
-      <div className="relative mt-5 flex w-full flex-wrap">
+      {/* <div className="relative mt-5 flex w-full flex-wrap">
         {secondarySkills &&
           secondarySkills.map((item, index) => (
             <SkillCard key={"secondaryskillcard" + index} item={item} />
           ))}
-      </div>
+      </div> */}
 
       {/* ====================================================================== */}
 

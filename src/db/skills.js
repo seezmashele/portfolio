@@ -54,6 +54,11 @@ export const mainSkills = [
     url: "https://firebase.google.com/"
   },
   {
+    title: "Vite",
+    image: viteLogo,
+    url: "https://vitejs.dev/"
+  },
+  {
     title: "Directus",
     image: directusLogo,
     url: "https://directus.io/"
@@ -62,14 +67,14 @@ export const mainSkills = [
 
 export const secondarySkills = [
   {
-    title: "Node.js",
-    image: nodeLogo,
-    url: "https://nodejs.org/en/"
-  },
-  {
     title: "ESLint",
     image: eslintLogo,
     url: "https://eslint.org/"
+  },
+  {
+    title: "Node.js",
+    image: nodeLogo,
+    url: "https://nodejs.org/en/"
   },
   {
     title: "Webpack",
