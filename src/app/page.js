@@ -12,7 +12,8 @@ import { socialMediaLinks } from "../db/socialMediaLinks"
 
 export default function Home() {
   return (
-    <main className="page_width_wide bg-white bg-opacity-75 border m-10 mb-20 border-neutral-500 main_shadowF pt-10 pb-4 mx-auto flex w-full flex-col">
+    <main className="page_width_wide bg-white bg-opacity-75 border flat_shadow m-10 mb-20 border-neutral-500 main_shadowF pt-10 pb-4 mx-auto flex w-full flex-col">
+      {/* <div className="h-20 border-b border-neutral-500"></div> */}
       <div className="w-full text-sm flex xs:flex-col md:flex-row xs:space-x-0 xs:space-y-10 md:space-y-0 md:space-x-10">
         <div className="inline-block xs:m-auto md:m-0 w-40 flex-shrink-0 h-40 flex-grow-0 bg-gray-100 rounded-full overflow-hidden">
           <Image

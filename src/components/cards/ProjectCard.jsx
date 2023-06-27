@@ -18,7 +18,7 @@ const ProjectCard = ({ item }) => {
         href={item.externalUrl}
         target="_blank"
         rel="noreferrer"
-        className="relative border-neutral-500 border left-0 w-full h-80 overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
+        className="relative border-neutral-500 border left-0 w-full h-96 overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
       >
         <img
           className="absolute object-cover object-top border-brF w-full h-full h-fullF left-0 image_visibility"

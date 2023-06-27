@@ -38,11 +38,11 @@ export const mainSkills = [
     image: tailwindcssLogo,
     url: "https://tailwindcss.com/"
   },
-  {
-    title: "Sass",
-    image: sassLogo,
-    url: "https://sass-lang.com/"
-  },
+  // {
+  //   title: "Sass",
+  //   image: sassLogo,
+  //   url: "https://sass-lang.com/"
+  // },
   {
     title: "Material UI",
     image: materialuiLogo,

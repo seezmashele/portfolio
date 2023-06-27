@@ -50,11 +50,11 @@ code {
   border-bottom: 5px solid #262626;
 }
 
-@layer components {
-  :root {
-    @apply bg-yellow-50;
-  }
+.flat_shadow {
+  box-shadow: 8px 8px 0 0 #f2f2f2;
+}
 
+@layer components {
   body {
     @apply px-4;
   }
