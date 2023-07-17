@@ -21,6 +21,7 @@ const bitbucketLogo = "logos/bitbucket.svg"
 const eslintLogo = "logos/eslint.svg"
 const vscodeLogo = "logos/vscode.svg"
 const prettierLogo = "logos/prettier.svg"
+const wordpressLogo = "logos/wordpress.svg"
 
 export const mainSkills = [
   {
@@ -38,25 +39,25 @@ export const mainSkills = [
     image: tailwindcssLogo,
     url: "https://tailwindcss.com/"
   },
-  // {
-  //   title: "Sass",
-  //   image: sassLogo,
-  //   url: "https://sass-lang.com/"
-  // },
   {
     title: "Material UI",
     image: materialuiLogo,
     url: "https://mui.com/"
   },
   {
+    title: "SASS",
+    image: sassLogo,
+    url: "https://sass-lang.com/"
+  },
+  {
+    title: "WordPress",
+    image: wordpressLogo,
+    url: "https://wordpress.com/"
+  },
+  {
     title: "Firebase",
     image: firebaseLogo,
     url: "https://firebase.google.com/"
-  },
-  {
-    title: "Vite",
-    image: viteLogo,
-    url: "https://vitejs.dev/"
   },
   {
     title: "Directus",

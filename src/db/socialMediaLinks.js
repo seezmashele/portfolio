@@ -8,11 +8,11 @@ let socialMediaLinks = [
     image: linkedinLogo,
     url: "https://www.linkedin.com/in/seezmashele/"
   },
-  {
-    title: "Polywork",
-    image: polyworkLogo,
-    url: "https://www.polywork.com/seezmashele"
-  },
+  // {
+  //   title: "Polywork",
+  //   image: polyworkLogo,
+  //   url: "https://www.polywork.com/seezmashele"
+  // },
   {
     title: "GitHub",
     image: githubLogo,

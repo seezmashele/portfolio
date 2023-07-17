@@ -4,11 +4,11 @@ const SocialLinkCard = ({ item }) => {
       href={item.url}
       target="_blank"
       rel="noreferrer"
-      className="border flex items-center flex-col justify-center border-neutral-500 w-28 h-14F py-3 mr-3.5 mb-3 shadowF cursor-pointer hover:shadow-md flex-growF"
+      className="border flex items-center flex-col justify-center border-neutral-500 w-20 h-14F py-3 mr-3.5 mb-3 shadowF cursor-pointer hover:shadow-md flex-growF"
     >
       <img
         draggable="false"
-        className="h-7 w-7 object-contain"
+        className="h-6 w-6 object-contain"
         src={item.image}
         alt=""
       />
