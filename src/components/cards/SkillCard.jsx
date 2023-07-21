@@ -7,7 +7,7 @@ const SkillCard = ({ item }) => (
     rel="noreferrer"
     className="card_flat_shadow box_radius mr-4 mb-4"
   >
-    <button className="card_styling hover_translatef box_radius w-24 pt-2 pb-3 hover:shadow-md cursor-pointer">
+    <button className="card_styling hover_translatef box_radius select-none w-24 pt-2 pb-3 hover:shadow-md cursor-pointer">
       <img
         draggable="false"
         className="mt-2 mx-auto my-auto h-10 w-10 object-contain"

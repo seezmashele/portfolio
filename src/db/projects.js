@@ -5,36 +5,40 @@ const publikeventsImage = "img/projects/publik.png"
 
 let listOfItems = [
   {
-    title: "publik-events.vercel.app",
+    title: "publik-events",
     image: publikeventsImage,
     overview:
       "A Next.js website to find and share events. Styled with TailwindCSS and MUI while data and images are stored on Firebase.",
+    pagePath: "/projects/publik-events",
     gitHubUrl: "https://github.com/seezmash/publik-events",
     externalUrl: "https://publik-events.vercel.app/",
     projectTags: ["Next.js", "TailwindCSS"]
   },
   {
-    title: "mui-dashboard.web.app",
+    title: "mui-dashboard",
     image: muidashboardImage,
     overview:
       "A dashboard example with several pages built with various Material UI Components.",
+    pagePath: "/projects/mui-dashboard",
     gitHubUrl: "https://github.com/seezmash/mui-dashboard",
     externalUrl: "https://mui-dashboard.web.app/",
     projectTags: ["MUI", "Firebase"]
   },
   {
-    title: "www.playground.africa",
+    title: "playground",
     image: playgroundImage,
     overview:
       "A Next.js website to find and share gaming news and events. Styled with TailwindCSS while data and images are stored on Firebase.",
+    pagePath: "/projects/publik-events",
     gitHubUrl: "https://github.com/seezmash/supercar-blog",
     externalUrl: "https://playground-africa.vercel.app/",
     projectTags: ["Next.js", "TailwindCSS"]
   },
   {
-    title: "fancy-notebook.web.app",
+    title: "fancy-notebook",
     image: fancynotebookImage,
     overview: "A simple note manager hosted on Firebase.",
+    pagePath: "/projects/publik-events",
     gitHubUrl: "https://github.com/seezmash/fancy-notebook",
     externalUrl: "https://fancy-notebook.web.app",
     projectTags: ["React", "Firebase", "TailwindCSS"]

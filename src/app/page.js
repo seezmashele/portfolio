@@ -8,6 +8,7 @@ import { mainSkills } from "../db/skills"
 import projectsList from "../db/projects"
 import { socialMediaLinks } from "../db/socialMediaLinks"
 import PageTabs from "@/components/PageTabs"
+import SectionDivider from "@/components/widgets/SectionDivider"
 
 export default function Home() {
   return (
@@ -53,7 +54,7 @@ export default function Home() {
           I have an strong interest in UX Design and building exciting projects.
         </p>
 
-        <div className="w-full h-1 border-t mt-8 border-neutral-500"></div>
+        <SectionDivider />
 
         {/* ====================================================================== */}
 
@@ -64,8 +65,12 @@ export default function Home() {
               <SkillCard key={"socialmedia" + index} item={item} />
             ))}
         </div>
+        <p className="block mt-5 mb-2 w-full max-w-2xl flex-grow leading-relaxed text-lgF">
+          React, Next.js and UI design are my main strengths with 5+ years of
+          self taught app design and freelancing.
+        </p>
 
-        <div className="w-full h-1 border-t mt-8 border-neutral-500"></div>
+        <SectionDivider />
 
         {/* ====================================================================== */}
 
