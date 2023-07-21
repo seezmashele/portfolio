@@ -50,11 +50,6 @@ export const mainSkills = [
     url: "https://sass-lang.com/"
   },
   {
-    title: "WordPress",
-    image: wordpressLogo,
-    url: "https://wordpress.com/"
-  },
-  {
     title: "Firebase",
     image: firebaseLogo,
     url: "https://firebase.google.com/"

@@ -1,19 +1,23 @@
+import Link from "next/link"
+
 const SocialLinkCard = ({ item }) => {
   return (
-    <a
+    <Link
       href={item.url}
       target="_blank"
       rel="noreferrer"
-      className="border flex items-center flex-col justify-center border-neutral-500 w-20 h-14F py-3 mr-3.5 mb-3 shadowF cursor-pointer hover:shadow-md flex-growF"
+      className="card_flat_shadow box_radius mr-3.5 mb-3"
     >
-      <img
-        draggable="false"
-        className="h-6 w-6 object-contain"
-        src={item.image}
-        alt=""
-      />
-      <div className="mt-2 font-semiboldF">{item.title}</div>
-    </a>
+      <button className="box_radius card_styling hover_translatef flex items-center flex-col justify-center w-20 py-3 cursor-pointer hover:shadow-md">
+        <img
+          draggable="false"
+          className="h-6 w-6 object-contain"
+          src={item.image}
+          alt=""
+        />
+        <div className="mt-2 font-semiboldF">{item.title}</div>
+      </button>
+    </Link>
   )
 }
 

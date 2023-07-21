@@ -1,6 +1,6 @@
 const fancynotebookImage = "img/projects/fancy-notebook.png"
 const muidashboardImage = "img/projects/mui-dashboard.png"
-// const playgroundImage = "img/projects/playground.png"
+const playgroundImage = "img/projects/playground.png"
 const publikeventsImage = "img/projects/publik.png"
 
 let listOfItems = [
@@ -22,15 +22,15 @@ let listOfItems = [
     externalUrl: "https://mui-dashboard.web.app/",
     projectTags: ["MUI", "Firebase"]
   },
-  // {
-  //   title: "www.playground.africa",
-  //   image: playgroundImage,
-  //   overview:
-  //     "A Next.js website to find and share gaming news and events. Styled with TailwindCSS while data and images are stored on Firebase.",
-  //   gitHubUrl: "https://github.com/seezmash/supercar-blog",
-  //   externalUrl: "https://playground-africa.vercel.app/",
-  //   projectTags: ["Next.js", "TailwindCSS"]
-  // },
+  {
+    title: "www.playground.africa",
+    image: playgroundImage,
+    overview:
+      "A Next.js website to find and share gaming news and events. Styled with TailwindCSS while data and images are stored on Firebase.",
+    gitHubUrl: "https://github.com/seezmash/supercar-blog",
+    externalUrl: "https://playground-africa.vercel.app/",
+    projectTags: ["Next.js", "TailwindCSS"]
+  },
   {
     title: "fancy-notebook.web.app",
     image: fancynotebookImage,

@@ -1,6 +1,7 @@
 import Image from "next/image"
+import Link from "next/link"
 
-const ProjectCard = ({ item }) => {
+const ProjectCard = ({ item, isLastItem = false }) => {
   let tagsList = [
     "Gears of War",
     "Apex Legends",
@@ -13,19 +14,18 @@ const ProjectCard = ({ item }) => {
   let shortTags = tagsList
   shortTags.splice(3)
   return (
-    <div className="relative w-full solid_shadowF max-w-xl flex-grow flex flex-col select-none">
-      <a
-        href={item.externalUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="relative border-neutral-500 border left-0 w-full h-80 overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
-      >
-        <img
-          className="absolute object-cover object-top border-brF w-full h-full h-fullF left-0 image_visibility"
-          src={item.image}
-          alt={item.title}
-        />
-      </a>
+    <div className="xs:w-full md:w-[40%] flex-grow flex flex-col select-none pb-2">
+      <div className="w-full aspect-[4/3] box_radius card_flat_shadow">
+        <Link href={item.externalUrl} target="_blank" rel="noreferrer">
+          <div className="relative box_radius card_styling left-0 w-full h-full overflow-hidden cursor-pointer hover:shadow-md transition-allf hover_translatef">
+            <img
+              className="absolute object-cover object-top w-full h-full h-fullF left-0 image_visibility"
+              src={item.image}
+              alt={item.title}
+            />
+          </div>
+        </Link>
+      </div>
       <a
         href={item.externalUrl}
         target="_blank"
@@ -34,10 +34,10 @@ const ProjectCard = ({ item }) => {
       >
         {item.title}
       </a>
-      <div className="group_text_medium mt-2.5 text-base w-full overflow-hidden">
+      <div className="group_text_medium mt-2.5 text-sm w-full overflow-hidden">
         {item.overview}
       </div>
-      <div className="border-b border-neutral-500 mt-12"></div>
+      {/* {!isLastItem && <div className="border-b border-neutral-500 mt-12"></div>} */}
       {/* <div className="overview_text flex mt-1">
     {#if shortTags}
       {#each shortTags as item}

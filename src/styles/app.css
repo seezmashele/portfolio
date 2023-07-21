@@ -37,7 +37,7 @@ code {
 @tailwind utilities;
 
 .title_gradient {
-  background: -webkit-linear-gradient(right, #22c55e, #0ea5e9);
+  background: -webkit-linear-gradient(left, #ff00ff, #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -54,17 +54,30 @@ code {
   box-shadow: 8px 8px 0 0 #f2f2f2;
 }
 
+.card_flat_shadow {
+  box-shadow: 8px 8px 0 0 #f2f2f2;
+  box-shadow: none;
+}
+
 @layer components {
   body {
     @apply px-4;
   }
 
   .page_width_wide {
-    @apply max-w-3xl px-10;
+    @apply max-w-4xl px-10;
   }
 
   .box_radius {
-    @apply rounded;
+    @apply rounded-lg;
+  }
+
+  .hover_translate {
+    @apply hover:translate-x-1 hover:translate-y-1 transition-transform duration-150;
+  }
+
+  .card_styling {
+    @apply bg-neutral-100 border-neutral-500;
   }
 
   .card_container:hover .card_title {

@@ -1,20 +1,24 @@
+import Link from "next/link"
+
 const SkillCard = ({ item }) => (
-  <a
+  <Link
     href={item.url}
     target="_blank"
     rel="noreferrer"
-    className="border-neutral-500 solid_shadowF border w-28 pt-2 pb-3 mr-4 mb-4 rounded-mdF cursor-pointer hover:shadow-md flex-growF"
+    className="card_flat_shadow box_radius mr-4 mb-4"
   >
-    <img
-      draggable="false"
-      className="mt-2 mx-auto my-auto h-12 w-12 object-contain"
-      src={item.image}
-      alt=""
-    />
-    <h4 className="mt-2 py-1 text-center text-stone-600 font-semiboldF text-sm">
-      {item.title}
-    </h4>
-  </a>
+    <button className="card_styling hover_translatef box_radius w-24 pt-2 pb-3 hover:shadow-md cursor-pointer">
+      <img
+        draggable="false"
+        className="mt-2 mx-auto my-auto h-10 w-10 object-contain"
+        src={item.image}
+        alt=""
+      />
+      <h4 className="mt-2 py-1 text-center text-stone-600 font-semiboldF text-sm">
+        {item.title}
+      </h4>
+    </button>
+  </Link>
 )
 
 export default SkillCard
