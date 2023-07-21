@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import SectionTitle from "@/components/widgets/SectionTitle"
 import resumeImage from "@/assets/img/cv1.webp"
@@ -24,25 +26,25 @@ export default function Home() {
             My latest resume
           </h2>
           <div className="">
-            {/* <a
-              href="/sizwe_mashele_cv_1.pdf"
-              alt="alt text"
-              download
-              className="bg-black text-white box_radius px-4 pt-2.5 pb-3 text-sm"
-              // target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download File
-            </a> */}
             <a
-              href="/sizwe_mashele_cv_1.pdf"
-              alt="alt text"
               download
-              className="border -mt-4 transition-all duration-150 border-neutral-500 box_radius px-3 pt-2.5 pb-3 bg-blackf text-whitef hover:translate-x-1 hover:translate-y-1 bg-white text-sm"
-            >
-              Download PDF
-            </a>
-            {/* <div className="flat_shadow box_radius"></div> */}
+              alt="alt text"
+              rel="noopener noreferrer"
+              id="resume-download-button"
+              href="/sizwe_cv.pdf"
+              className="hidden"
+              // target="_blank"
+            ></a>
+            <div className="flat_shadow box_radius">
+              <button
+                onClick={() => {
+                  document.getElementById("resume-download-button").click()
+                }}
+                className="border -mt-4 transition-all duration-150 border-neutral-500 box_radius px-3 pt-2.5 pb-3 bg-blackf text-whitef hover:translate-x-1 hover:translate-y-1 bg-white text-sm"
+              >
+                Download PDF
+              </button>
+            </div>
           </div>
         </div>
 
