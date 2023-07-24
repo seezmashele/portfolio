@@ -6,13 +6,24 @@ import SectionTitle from "@/components/widgets/SectionTitle"
 import SectionDivider from "@/components/widgets/SectionDivider"
 
 export default function Home() {
+  const techStack = ["React", "MUI", "Firebase"]
+  const features = [
+    "Forms",
+    "Responsive grid",
+    "Customers table",
+    "Time and date pickers"
+  ]
+
   return (
     <div>
       <PageTabs selectedPage={1} />
 
-      <main className="page_width_wide box_radius select-none bg-white bg-opacity-75 border flat_shadow mt-8 mb-20 border-neutral-500 py-10 mx-auto flex w-full flex-col">
-        <PageTitle title="mui-dashboard" />
+      <main className="page_width_wide box_radius select-none bg-white bg-opacity-75 border flat_shadow mt-8 mb-20 border-neutral-500 pt-10 pb-24 mx-auto flex w-full flex-col items-center">
         <div className="w-full max-w-xl">
+          <PageTitle
+            title="Mui Dashboard"
+            address="https://mui-dashboard.web.app"
+          />
           <div className="w-full aspect-[4/3] box_radius bg-neutral-100 overflow-hidden">
             <Image
               draggable={false}
@@ -23,32 +34,36 @@ export default function Home() {
           </div>
           <SectionTitle title="About this project" />
           <p className="block mt-5 w-full max-w-2xl flex-grow leading-relaxed text-lgF">
-            I have an strong interest in UX Design and building exciting
-            projects.
+            A dashboard example with several pages built with various Material
+            UI Components.
           </p>
-
           <SectionDivider />
-
           <SectionTitle title="Tech stack" />
-          <ul className="list-disc mt-4">
-            <li>Vite, React</li>
-            <li>React router</li>
-            <li>MUI</li>
-            <li>TailwindCSS</li>
-            <li>Lexical (Rich text editor)</li>
-          </ul>
-
+          <div className="mt-4">
+            {techStack.map((item, index) => {
+              return (
+                <div key={"techstack" + index} className="flex mb-0.5">
+                  <div className="rounded-full mt-[0.6rem] bg-black h-1.5 w-1.5 mr-3.5 flex-shrink-0"></div>
+                  {item}
+                </div>
+              )
+            })}
+          </div>
           <SectionDivider />
-
           <SectionTitle title="Features" />
-          <ul className="list-disc mt-4">
-            <li>Firebase auth - create user accounts, login, logout</li>
-            <li>
-              Upload Events - select and upload images to Firebase storage, rich
-              text editor
-            </li>
-            <li>Responsive grid</li>
-          </ul>
+          <div className="mt-4">
+            {features.map((item, index) => {
+              return (
+                <div
+                  key={"techstack" + index}
+                  className="flex items-centerf mb-0.5"
+                >
+                  <div className="rounded-full bg-black h-1.5 w-1.5 mr-3.5 mt-[0.6rem] flex-shrink-0"></div>
+                  {item}
+                </div>
+              )
+            })}
+          </div>
         </div>
       </main>
     </div>

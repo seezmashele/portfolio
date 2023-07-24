@@ -1,22 +1,13 @@
 import PageTitle from "@/components/widgets/PageTitle"
 import PageTabs from "@/components/PageTabs"
-import projectImage from "@/assets/img/projects/publik.png"
+import projectImage from "@/assets/img/projects/fancy-notebook.png"
 import Image from "next/image"
 import SectionTitle from "@/components/widgets/SectionTitle"
 import SectionDivider from "@/components/widgets/SectionDivider"
 
 export default function Home() {
-  const techStack = [
-    "React",
-    "Firebase",
-    "TailwindCSS",
-    "Lexical - rich text editor"
-  ]
-  const features = [
-    "Firebase auth - create user accounts, login, logout",
-    "Upload Events - select and upload images to Firebase storage, rich text editor",
-    "Responsive grid"
-  ]
+  const techStack = ["React", "Firebase"]
+  const features = ["HTML inputs", "Firebase subcollections"]
 
   return (
     <div>
@@ -25,8 +16,8 @@ export default function Home() {
       <main className="page_width_wide box_radius select-none bg-white bg-opacity-75 border flat_shadow mt-8 mb-20 border-neutral-500 pt-10 pb-24 mx-auto flex w-full flex-col items-center">
         <div className="w-full max-w-xl">
           <PageTitle
-            title="Publik Events"
-            address="https://publik-events.vercel.app"
+            title="Fancy Notebook"
+            address="https://fancy-notebook.web.app"
           />
           <div className="w-full aspect-[4/3] box_radius bg-neutral-100 overflow-hidden">
             <Image
@@ -38,8 +29,7 @@ export default function Home() {
           </div>
           <SectionTitle title="About this project" />
           <p className="block mt-5 w-full max-w-2xl flex-grow leading-relaxed text-lgF">
-            A Next.js website to find and share events. Styled with TailwindCSS
-            and MUI. Data and images are stored on Firebase.
+            Add, remove and update notes on a simple React + Firebase app.
           </p>
           <SectionDivider />
           <SectionTitle title="Tech stack" />

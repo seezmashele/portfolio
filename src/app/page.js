@@ -75,7 +75,7 @@ export default function Home() {
         {/* ====================================================================== */}
 
         <SectionTitle title="Recent projects" />
-        <div className="relative mb-4 flex gap-8 w-full flex-wrap">
+        <div className="relative mb-4 flex gap-8 w-full flex-wrap items-stretch justify-stretch">
           {projectsList &&
             projectsList.map((item, index) => (
               <ProjectCard key={"projectcard" + index} item={item} />

@@ -29,7 +29,7 @@ const ProjectCard = ({ item, isLastItem = false }) => {
       </div>
       <div className="flex mt-5">
         <Link href={item.externalUrl} target="_blank" rel="noreferrer">
-          <div className="bg-blackf borderf bg-neutral-100 border-neutral-500 text-black box_radius w-auto text-sm px-3 py-2 flex items-center gap-2 cursor-pointer hover:shadow-md font-semibold">
+          <div className="bg-blackf borderf bg-neutral-100 border-neutral-500 text-black box_radius w-auto text-sm px-3 py-2.5 flex items-center gap-2 cursor-pointer hover:shadow-md font-semibold">
             <ExternalLinkIcon />
             <span>Live preview</span>
           </div>
@@ -46,18 +46,7 @@ const ProjectCard = ({ item, isLastItem = false }) => {
       <div className="group_text_medium mt-2.5 text-sm w-full overflow-hidden">
         {item.overview}
       </div>
-      {/* {!isLastItem && <div className="border-b border-neutral-500 mt-12"></div>} */}
-      {/* <div className="overview_text flex mt-1">
-    {#if shortTags}
-      {#each shortTags as item}
-        <div
-          className="flex box_radius mr-2 rounded-full px-1.5 pt-1 pb-1.5 bg-gray-50F text-xs font-semibold text-gray-500 bg-gray-50 truncate"
-          >
-          {item}
-        </div>
-      {/each}
-    {/if}
-  </div> */}
+      {/* <div className="border-b border-neutral-500 mt-6"></div> */}
     </div>
   )
 }

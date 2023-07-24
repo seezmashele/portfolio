@@ -1,21 +1,21 @@
 const fancynotebookImage = "img/projects/fancy-notebook.png"
 const muidashboardImage = "img/projects/mui-dashboard.png"
-const playgroundImage = "img/projects/playground.png"
+const ipTrackerImage = "img/projects/ip-tracker.webp"
 const publikeventsImage = "img/projects/publik.png"
 
 let listOfItems = [
   {
-    title: "publik-events",
+    title: "Publik Events",
     image: publikeventsImage,
     overview:
-      "A Next.js website to find and share events. Styled with TailwindCSS and MUI while data and images are stored on Firebase.",
+      "A Next.js website to find and share events. Styled with TailwindCSS and MUI. Data and images are stored on Firebase.",
     pagePath: "/projects/publik-events",
     gitHubUrl: "https://github.com/seezmash/publik-events",
-    externalUrl: "https://publik-events.vercel.app/",
+    externalUrl: "https://publik-events.vercel.app",
     projectTags: ["Next.js", "TailwindCSS"]
   },
   {
-    title: "mui-dashboard",
+    title: "Mui Dashboard",
     image: muidashboardImage,
     overview:
       "A dashboard example with several pages built with various Material UI Components.",
@@ -25,20 +25,20 @@ let listOfItems = [
     projectTags: ["MUI", "Firebase"]
   },
   {
-    title: "playground",
-    image: playgroundImage,
+    title: "IP Tracker",
+    image: ipTrackerImage,
     overview:
-      "A Next.js website to find and share gaming news and events. Styled with TailwindCSS while data and images are stored on Firebase.",
-    pagePath: "/projects/publik-events",
-    gitHubUrl: "https://github.com/seezmash/supercar-blog",
-    externalUrl: "https://playground-africa.vercel.app/",
+      "A Frontend Mentor Challenge to find the location of an IP address or domain. Works with the Ipify api to get data and Leaflet to render a map.",
+    pagePath: "/projects/ip-tracker",
+    gitHubUrl: "https://github.com/seezmashele/frontend-ip-tracker",
+    externalUrl: "https://frontend-ip-tracker.vercel.app/",
     projectTags: ["Next.js", "TailwindCSS"]
   },
   {
-    title: "fancy-notebook",
+    title: "Fancy Notebook",
     image: fancynotebookImage,
-    overview: "A simple note manager hosted on Firebase.",
-    pagePath: "/projects/publik-events",
+    overview: "Add, remove and update notes on a simple React + Firebase app.",
+    pagePath: "/projects/fancy-notebook",
     gitHubUrl: "https://github.com/seezmash/fancy-notebook",
     externalUrl: "https://fancy-notebook.web.app",
     projectTags: ["React", "Firebase", "TailwindCSS"]
