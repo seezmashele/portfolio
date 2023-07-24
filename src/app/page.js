@@ -59,7 +59,7 @@ export default function Home() {
         {/* ====================================================================== */}
 
         <SectionTitle title="My main skills" />
-        <div className="relative mt-5 mb-4f flex w-full flex-wrap max-w-2xlf">
+        <div className="relative mt-5 flex w-full flex-wrap max-w-2xlf">
           {mainSkills &&
             mainSkills.map((item, index) => (
               <SkillCard key={"socialmedia" + index} item={item} />
@@ -75,7 +75,7 @@ export default function Home() {
         {/* ====================================================================== */}
 
         <SectionTitle title="Recent projects" />
-        <div className="relative mb-4 flex gap-8 w-full flex-wrap items-stretch justify-stretch">
+        <div className="relative mt-5 mb-4 flex gap-8 w-full flex-wrap items-stretch justify-stretch">
           {projectsList &&
             projectsList.map((item, index) => (
               <ProjectCard key={"projectcard" + index} item={item} />
