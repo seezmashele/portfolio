@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <PageTabs selectedPage={1} />
 
-      <main className="page_width_wide box_radius select-none bg-white bg-opacity-75 border flat_shadow mt-8 mb-20 border-neutral-500 py-10 mx-auto flex w-full flex-col">
+      <main className="main_container">
         <PageTitle title="My projects" />
         <div className="relative mb-10 flex gap-8 w-full flex-wrap">
           {projectsList &&

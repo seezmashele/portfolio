@@ -17,7 +17,7 @@ export default function Home() {
     <div>
       <PageTabs selectedPage={1} />
 
-      <main className="page_width_wide box_radius bg-white bg-opacity-75 border flat_shadow mt-8 mb-20 border-neutral-500 pt-10 pb-24 mx-auto flex w-full flex-col items-center">
+      <main className="main_container items-center">
         <div className="w-full max-w-xl">
           <PageTitle
             title="IP Tracker"

@@ -1,26 +1,26 @@
 // import Image from "next/image"
-import { ExternalLinkIcon } from "@radix-ui/react-icons"
-import Link from "next/link"
+import { ExternalLinkIcon } from '@radix-ui/react-icons'
+import Link from 'next/link'
 
 const ProjectCard = ({ item, isLastItem = false }) => {
   let tagsList = [
-    "Gears of War",
-    "Apex Legends",
-    "Twitch",
-    "YouTube",
-    "FB Gaming",
-    "MOBA",
-    "Cosplay"
+    'Gears of War',
+    'Apex Legends',
+    'Twitch',
+    'YouTube',
+    'FB Gaming',
+    'MOBA',
+    'Cosplay'
   ]
   let shortTags = tagsList
   shortTags.splice(3)
   return (
-    <div className="xs:w-full md:w-[40%] flex-grow flex flex-col select-none pb-2">
+    <div className="xs:w-full md:w-[40%] flex-grow flex flex-col select-none pb-3">
       <div className="w-full aspect-[4/3] box_radius card_flat_shadow">
         <Link href={item.pagePath} rel="noreferrer">
           <div className="relative box_radius card_styling left-0 w-full h-full overflow-hidden cursor-pointer hover:shadow-md transition-allf hover_translatef">
             <img
-              className="absolute object-cover object-top w-full h-full left-0"
+              className="absolute p-3 rounded-lg overflow-hidden shadow-lg object-cover object-top w-full h-full left-0"
               src={item.image}
               alt={item.title}
             />
