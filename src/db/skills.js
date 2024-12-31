@@ -1,27 +1,16 @@
-const sassLogo = 'logos/sass.svg'
 const reactLogo = 'logos/react.svg'
 const nextjsLogo = 'logos/nextjs.svg'
 const firebaseLogo = 'logos/firebase.svg'
 const tailwindcssLogo = 'logos/tailwindcss.svg'
 const webpackLogo = 'logos/webpack.svg'
-const strapiLogo = 'logos/strapi.svg'
 const materialuiLogo = 'logos/material-ui.svg'
 const svelteLogo = 'logos/svelte.svg'
-const jestLogo = 'logos/jest.svg'
-const reactQueryLogo = 'logos/react-query.svg'
-const gitLogo = 'logos/github.svg'
-const meilieSearchLogo = 'logos/meili.svg'
 const directusLogo = 'logos/directus.svg'
-const figmaLogo = 'logos/figma.svg'
-const vercelLogo = 'logos/vercel.svg'
 const viteLogo = 'logos/vite.svg'
-const typescriptLogo = 'logos/typescript.svg'
 const nodeLogo = 'logos/nodejs.svg'
 const bitbucketLogo = 'logos/bitbucket.svg'
 const eslintLogo = 'logos/eslint.svg'
 const vscodeLogo = 'logos/vscode.svg'
-const prettierLogo = 'logos/prettier.svg'
-const supabaseLogo = 'logos/supabase.svg'
 
 export const mainSkills = [
   {
@@ -45,25 +34,15 @@ export const mainSkills = [
     url: 'https://mui.com/'
   },
   {
-    title: 'SASS',
-    image: sassLogo,
-    url: 'https://sass-lang.com/'
-  },
-  {
     title: 'Firebase',
     image: firebaseLogo,
     url: 'https://firebase.google.com/'
   },
   {
-    title: 'Supabase',
-    image: supabaseLogo,
-    url: 'https://supabase.com/'
+    title: 'Directus',
+    image: directusLogo,
+    url: 'https://directus.io/'
   }
-  // {
-  //   title: "Directus",
-  //   image: directusLogo,
-  //   url: "https://directus.io/"
-  // }
 ]
 
 export const secondarySkills = [
